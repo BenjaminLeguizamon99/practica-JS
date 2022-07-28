@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-titulo {
+    font-size: 2em;
+    background-image: linear-gradient(to right, #ffffff, #eeeef2, #dddee5, #cbced8, #b9becc, #b9becc, #b9becc, #b9becc, #cbced8, #dddee5, #eeeef2, #ffffff);
+    padding-top: 1rem;
+}
+.nav-position {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nav-carrito:hover {
+    transform: scale(1.3,1.3);
+    transition: .5s;
+}
+.carrito-numero {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*Seccion principal*/
+
+.img-fondo {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(imagenes/img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.titulo {
+    color: #edf2f4;
+    padding-top: 1em;
+}
+
+.barra-busqueda {
+    width: 30vw;
+    border: none;
+    border-radius: 7px;
+    padding: .7rem;
+    color: #a0aabb;
+}
+
+.parte-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    width: 100vw;
+    gap: 1rem;
+}
+.informacion {
+    background-image: linear-gradient(to right, #ffffff, #e5e5eb, #cbccd8, #b0b4c5, #959db2, #959db2, #959db2, #959db2, #b0b4c5, #cbccd8, #e5e5eb, #ffffff);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.info1{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.icono {
+    font-size: 2.2rem;
+}
+
+/*Cursos*/
+
+.cursos h2 {
+    padding: 1rem;
+}
+.cards-flex {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.card {
+    border: 1px solid black;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card h4 {
+    margin-top: .5rem;
+}
+.card-btn {
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: .5rem;
+}
+
+.card-btn:hover {
+    background-color: #ef233c;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: .7s;
+}
+
+/*Ventana modal del carrito*/
+
+.ventana-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: auto;
+    flex-direction: column;
+}
+.modal-container {
+    width: 80%;
+    background-color: #eeeef2;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1em;
+    place-items: center;
+    transition: opacity .6s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+.tabla-productos {
+    width: 100%;
+}
+
+#vaciar-carrito {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    background-color: #959db2;
+    padding: .5rem;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.lista-cursos {
+    padding: 0rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.curso-seleccionados {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-top: 1rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconos-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos{
+    font-size: 2rem;
+    margin: 0px 1rem 0px 1rem;
+}
+.icono-github {
+    text-decoration: none;
+    color: #000;
+}
+.icono-github:hover {
+    color: #292929;
+}
